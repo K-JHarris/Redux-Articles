@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Card } from 'reactstrap';
 
 class Post extends Component {
     constructor(props){
@@ -19,10 +20,10 @@ class Post extends Component {
   render() {
 
     const postItems = this.state.posts.map(post => (
-        <div key={post.id}>
+        <Card className="card" key={post.id}>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
-        </div>
+        </Card>
     ))
 
     return (
