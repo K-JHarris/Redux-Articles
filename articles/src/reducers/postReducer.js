@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
          case NEW_POST:
             return {
                 ...state,
-                
+                item: action.payload
             }
 
         default:
