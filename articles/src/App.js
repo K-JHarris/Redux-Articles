@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 import Post from './components/Post';
 import PostForm from './components/PostForm';
 
