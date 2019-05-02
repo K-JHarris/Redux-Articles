@@ -20,8 +20,11 @@ class PostForm extends Component {
         title: this.state.title,
         body: this.state.body
       }
-
       this.props.createPost(post)
+         this.setState({
+           title: "",
+           body: ""
+         });
     }
 
     handleChange = e => {
